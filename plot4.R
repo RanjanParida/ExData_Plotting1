@@ -42,13 +42,13 @@ with(data, lines(Time, Sub_metering_3,
 legend("topright", 
        legend = colnames(data)[7:9],
        lty = 1, 
-       col = c("black", "blue", "red")
+       col = c("black", "blue", "red"),
        bty = "n" )
 
 
 ## plot number 4
 with(data, plot(Time, Global_reactive_power, 
                 type = "l",
-                xlab = "datetime" )
+                xlab = "datetime" ) )
 
 dev.off()
